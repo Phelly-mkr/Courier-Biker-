@@ -1,0 +1,19 @@
+# Cabeçalhos do Netlify (arquivo lido automaticamente na publicação).
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-6Ds/oG7FhjcOSqxxSI/p7l6gDjFl19Bo3o6Wu6OW4do=' 'sha256-t6KhFN6BhpYNxw6zYxX26cD7ij77XuZBP5qY8WyGxVw='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; media-src 'self' blob: data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+
+# O service worker e a página principal nunca ficam presos em cache velho: assim a atualização é percebida.
+/sw.js
+  Cache-Control: no-cache
+/index.html
+  Cache-Control: no-cache
+/manifest.webmanifest
+  Cache-Control: no-cache
+  Content-Type: application/manifest+json
+
+# Os demais arquivos (app.xxxx.js, styles.xxxx.css, ícones) usam o padrão do Netlify (confere com o servidor antes de reusar);
+# o app guarda tudo no service worker para abrir sem internet.
