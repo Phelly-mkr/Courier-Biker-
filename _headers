@@ -4,7 +4,7 @@
   Referrer-Policy: no-referrer
   X-Frame-Options: DENY
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-6Ds/oG7FhjcOSqxxSI/p7l6gDjFl19Bo3o6Wu6OW4do=' 'sha256-t6KhFN6BhpYNxw6zYxX26cD7ij77XuZBP5qY8WyGxVw='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; media-src 'self' blob: data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-9FXD6pr/p4+mci4n8QVtKvahdNhGVbBhpa6e7Wf87Yo=' 'sha256-N1nGKcnFtdHK35uNs/8ZP3mjWg11m0yBGqBKVxVgzVs='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; media-src 'self' blob: data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
 
 # O service worker e a página principal nunca ficam presos em cache velho: assim a atualização é percebida.
 /sw.js

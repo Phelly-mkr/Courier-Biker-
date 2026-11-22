@@ -8,7 +8,7 @@
  *
  * A versão e a lista de arquivos abaixo são preenchidas por build-web.mjs a cada empacotamento.
  */
-const VERSION = '1.0.0-9281a5ed0b';
+const VERSION = '1.1.0-54508d693e';
 const SHELL_CACHE = 'courier-bike-shell-' + VERSION;
 const FONT_CACHE = 'courier-bike-fonts-v1';
 // Obrigatórios: sem eles o service worker não instala. Opcionais: se algum não existir no site, tudo bem.
